@@ -1,0 +1,41 @@
+{
+  "name": "ai-tutor-backend",
+  "version": "1.0.0",
+  "description": "AI Competitive Exam Tutor - Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/utils/seeder.js",
+    "create-admin": "node src/utils/create-admin.js",
+    "test": "jest src/utils/practice.test.js src/utils/studyplan.test.js src/utils/tutor.test.js src/utils/audit.test.js src/utils/mocktest.test.js src/utils/navigation.test.js src/utils/history.test.js src/utils/admin.test.js src/utils/questionTypes.test.js --no-coverage"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "ai",
+    "tutor",
+    "exam",
+    "preparation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.4",
+    "morgan": "^1.12.1",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14"
+  }
+}
